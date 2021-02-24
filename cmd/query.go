@@ -10,6 +10,6 @@ func queryCmd() *cobra.Command {
 		Short: "query data from okexchain db.",
 	}
 
-	queryCmd.AddCommand(queryTxCmd)
+	queryCmd.AddCommand(queryTxCmd, blockTxsCmd)
 	return queryCmd
 }

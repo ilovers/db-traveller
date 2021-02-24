@@ -23,5 +23,5 @@ func Execute() {
 
 func init() {
 	rootCmd.PersistentFlags().StringVarP(&dataPath, "data-path", "d", "", "data path of okexchain db")
-	rootCmd.AddCommand(queryCmd())
+	rootCmd.AddCommand(queryCmd(), blockTxsCmd)
 }
